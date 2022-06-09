@@ -1,7 +1,1 @@
-.idea/.gitignore
-.idea/composerJson.xml
-.idea/deployment.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/rs-dev.ru.iml
-.idea/watcherTasks.xml
+.idea/
