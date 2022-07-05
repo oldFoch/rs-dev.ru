@@ -2264,6 +2264,7 @@ ol li {
 
 }
 
+
 ul {
     list-style: disc;
     margin: 0 0 2em 0;
@@ -3870,6 +3871,8 @@ body.is-preload #header.alt .logo {
 
 .padding-top-xxl{padding-top:24px}
 
+.padding-top-xxl.span{}
+
 .padding-bottom-2xs{padding-bottom:2px}
 
 .padding-bottom-xs{padding-bottom:4px}
@@ -4051,19 +4054,57 @@ main{
 	}
 .Programs_content{
 	background:#ffffff; /* Блок программы */
-	padding:48px;
-	color:000000
+  margin-left: 0;
+list-style: none;
+counter-reset: li;
+text-align: left;
+
 	}
 
-.Programs_content li{
-		margin-bottom:8px
-		}
+  .Programs_content li{
+    padding: 10px 0;
+  position: relative;
+  left: 1.5em;
+  margin-bottom: 0.75em;
+  padding-left: 1em;
+  background: rgb(241 240 241);
+  		}
+
+  .Programs_content li:before {
+        padding: 10px 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -1.5em;
+        width: 1.875em;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        background: #e37682;
+        border-bottom-left-radius: 70em;
+        border-top-left-radius: 70em;
+        counter-increment: li;
+        content: counter(li);
+      }
+
+      .Programs_content span {
+        color: #e37682;
+    }
+
+    .TopBlock__content span
+    {
+        color: #e37682;
+    }
+    
+
 .Contacts__content{
 	background:#ffffff
 	}
+
 .Contacts__content-list{
 	width:50%;color:000000
 	}
+
 .Contacts__content-list-items{
 	font-size:1.6rem;color:000000
 	}
@@ -4091,13 +4132,11 @@ main{
 	.error{background:#d63b36}
 	.wait{background:#d6ca49;color:#2b2b2b}
 	.submit-status i{font-size:5em}
-	.submit-status p{font-size:1.5em}
-footer{background-color:;
-      color:rgba(25, 25, 25, 0.65)
-      text-align:center;
-      margin: 0 auto;}
 
-footer h2{margin-bottom:8px; margin-top: ;color:#000000}
+	.submit-status p{font-size:1.5em}
+
+
+footer h2{margin-bottom:8px; margin-top:; color:#000000}
 
 footer dt{color:#000000;font-size:1rem}
 
@@ -4161,3 +4200,35 @@ top: 100px !important;
     text-decoration: none;
 
 }
+
+.margin-top-xl li{
+    padding: 10px 0;
+  position: relative;
+  margin-bottom: 0.75em;
+  padding-left: 1em;
+  background: rgb(241 240 241);
+  		}
+
+  .margin-top-xl li:before {
+        padding: 10px 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -1.5em;
+        width: 1.875em;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        background: #e37682;
+        border-bottom-left-radius: 70em;
+        border-top-left-radius: 70em;
+        counter-increment: li;
+        content: counter(li);
+      }
+
+      .margin-top-xl {
+        background:#ffffff; /* Блок программы */
+        list-style: none;
+        counter-reset: li;
+        text-align: left;
+      }
